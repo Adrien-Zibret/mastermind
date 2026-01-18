@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MasterMind</title>
+</head>
+
+<!-- <a href=""><i class="fa-solid fa-circle fa-2xl"></i></a> -->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mt-2 mx-auto text-center">
+                <h3>MasterMind</h3>
+                <h4>Devinez la combinaison du Maître du jeu</h4>
+                <small>Le mastermind a choisi une combinaison de quatre pions de couleur
+                    <button class="btn rounded-circle pionsExemple rouge"></button><button
+                        class="btn rounded-circle pionsExemple bleu"></button>
+                    <button class="btn rounded-circle pionsExemple jaune"></button><button
+                        class="btn rounded-circle pionsExemple vert"></button>
+                    <button class="btn rounded-circle pionsExemple rose"></button><button
+                        class="btn rounded-circle pionsExemple violet"></button>
+                    Une même couleur ne peut être présente qu'une seule fois.
+                </small>
+                <div id="divBtnCommencer">
+                    <button id="btnCommencer" class="btn btn-success mt-3">Commencer</button>
+                </div>
+            </div>
+        </div>
+        <div id="emp" class="mt-5"></div>
+        <div class="row" id="rowBtn">
+            <div class="col-lg-6 mx-auto text-center mt-5">
+                <small id="consigne">Appuyez sur les boutons pour entrer votre combinaison, le mastermind mettra
+                    ensuite un pion rouge pour chaque pion correctement placé et un pion blanc pour chaque pion
+                    présent mais mal placé</small>
+                <div id="zoneBtn"></div>
+                <small id="tourRestant"></small>
+                <div id="zoneBtnReco"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8ec23363a1.js" crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
